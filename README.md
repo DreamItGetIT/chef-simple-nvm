@@ -7,7 +7,7 @@ This cookbook exposes two resources install and node_install.
 ## Install recipe
 
 ```
-simple_nvm_install do
+simple_nvm_install "install-nvm" do
   user  "a-user"
 end
 ```
@@ -15,7 +15,7 @@ end
 # Node install
 
 ```
-simple_nvm_node_install do
+simple_nvm_node_install "install-node" do
   user          "a-user"
   version       "v0.10.15"
   make_default  true
