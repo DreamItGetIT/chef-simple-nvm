@@ -10,7 +10,7 @@ def user
 end
 
 def home_directory
-  return @home_directory if @home_directory
+  return new_resource.home_directory if new_resource.home_directory
 
   "/home/#{user}"
 end
